@@ -4,16 +4,20 @@
 ## “《算法之美》”文件夹
 ### 动态规划
 DynamicProgramming-Linear_DP.py：线性动态规划
+
 DynamicProgramming-Region_DP.py：区域动态规划
 
 ### 贪心算法
 GreedyAlgorithm-01BagProblem.py：0-1背包问题
+
 GreedyAlgorithm-MinimumSpanningTree.py：最小生成树
+
 GreedyAlgorithm-RefuelProblem.py：加油问题
 HuffmanTree.py：哈夫曼树
 
 ### 机器学习算法
 MachineLearning-KNN.py：K近邻算法
+
 MachineLearning-NaiveBayesClassifier.py：贝叶斯分类器
 
 ### 递归
@@ -28,7 +32,9 @@ SortAlgorithm.py：排序算法（冒泡排序、选择排序、插入排序、�
 
 ### 字符串算法
 StringAlgorithm.py：字符串算法（暴力匹配、B-M搜索算法、Sunday搜索算法、逆波兰公式）
+
 Suffix_expression.py：中缀表达式转换算法（未完成）
+
 Suffix_test.py：简化的后缀表达式转换算法
 
 
@@ -36,6 +42,7 @@ Suffix_test.py：简化的后缀表达式转换算法
 ## “手动实现”文件夹
 ### 欧几里得算法
 EuclideanAlgorithm.py：欧几里得算法-求两个正整数的最大公约数
+
 ExtendedEuclideanAlgorithm.py：扩展欧几里得算法（贝祖等式）
 
 ### 图算法
