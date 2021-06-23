@@ -45,6 +45,9 @@ EuclideanAlgorithm.py：欧几里得算法-求两个正整数的最大公约数
 
 ExtendedEuclideanAlgorithm.py：扩展欧几里得算法（贝祖等式）
 
+### 编辑距离算法
+DynamicProgramming-EditDistance.py：两个单词的编辑距离（levenshtein）算法的递归和动态规划的实现
+
 ### 图算法
 GraphAlgorithm-Hungary.py：匈牙利算法-寻找二部图中最大匹配的算法（转存）
 
