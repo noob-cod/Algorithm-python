@@ -22,7 +22,7 @@
 
 
 class Graph:
-
+    """基于二维数组的图的实现"""
     def __init__(self, sourceCollections=None):
         self._graph = None
         self._name = {}  # 名称到数组索引的映射
