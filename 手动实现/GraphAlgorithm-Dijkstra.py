@@ -4,7 +4,7 @@
 @Brief: 地杰斯特拉算法
 
 1、定义
-    给定带权有向图G和源点V，求V到G中其他顶点的最短路径
+    给定带权有向图G和源点V，求V到G中其他顶点的最短路径。路由算法。
 
 2、原理
     (1）初始化。用D存放v0到图中其他各顶点的距离，初始条件下处到v0处为0，其余均为无穷大；用
@@ -147,7 +147,7 @@ if __name__ == '__main__':
     graph = Graph(default)
     graph.set_names(names)
 
-    v = 'B'
+    v = 'E'
     res = dijkstra(graph, v)
     print(v, '到图中各顶点的最短距离：')
     for i in range(len(names)):
