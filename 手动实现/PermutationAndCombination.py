@@ -147,6 +147,34 @@ def combination3(nums):
     return res
 
 
+def combination4(nums, k):
+    """
+    给定一个正整数数组nums和整数k，请找出该数组内乘积小于k的连续的子数组的个数
+
+    例如：
+        输入：nums = [10, 5, 2, 6], k = 100
+        输出：8
+        解释：8个乘积小于100的子数组分别为[10], [5], [2], [6], [10, 5], [5, 2], [2, 6], [5, 2, 6]。
+    """
+    n = len(nums)
+    ans = left = 0
+    prod = 1
+    for right, val in enumerate(nums):
+        prod *= val
+        while prod >= k:
+            prod /= nums[left]
+            left += 1
+        ans += right - left + 1
+        # 个人理解 - 如何不重复地得到所有组合的情况：
+        # 感觉这个过程有点像递归，在计算“由nums[left]到nums[right]的子集个数”时，等价于计算“由nums[left]到
+        # nums[right-1]的子集个数”与“加入nums[right]后新增的子集个数”的和。而“nums[left]到nums[right-1]
+        # 的子集个数”实际上就是right在上一轮迭代的结果，该结果已经加到了ans里。而“加入nums[right]后新增的子集
+        # 个数”即为right-left+1，其含义为包含nums[right]的元素数量分别为1个，2个一直到right-left+1个的子集
+        # 的个数。
+
+    return ans
+
+
 if __name__ == '__main__':
     inputs = [1, 2, 2]
     result = permutation2(inputs)

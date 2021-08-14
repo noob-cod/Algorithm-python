@@ -51,6 +51,9 @@ DynamicProgramming-EditDistance.py：两个单词的编辑距离（levenshtein�
 ### 图算法
 GraphAlgorithm-Hungary.py：匈牙利算法-寻找二部图中最大匹配的算法（转存）
 
+### 闭包
+Closure.py
+
 ## “Backpropogation”文件夹
 ### 梯度下降算法
 GradientDescent.py：简化梯度下降算法
