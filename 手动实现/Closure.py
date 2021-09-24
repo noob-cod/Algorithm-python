@@ -30,6 +30,10 @@ def area(factor=1.0):
     return func
 
 
+def func(a, b):
+    return a+b
+
+
 def test1():
     a = 3
     b = 4
@@ -79,4 +83,4 @@ def test2():
 
 
 if __name__ == '__main__':
-    pass
+    test1()

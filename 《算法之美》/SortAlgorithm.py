@@ -66,7 +66,7 @@ class Sort:
 
         for i in range(self._num-1):  # 选择排序只正向遍历数列一次
             # index = i  # 记录比较值要插入的位置的下标
-            temp = self._list[i + 1]  # 获取当前未排序的值
+            temp = self._list[i+1]  # 获取当前未排序的值
             for j in range(i, -1, -1):  # 与有序部分的数值进行倒序比较
                 if temp < self._list[j]:  # 若比较值小于被比较值，则被比较值向后移动一位，插入未排序的值
                     self._list[j+1] = self._list[j]
